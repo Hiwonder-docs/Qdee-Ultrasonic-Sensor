@@ -1,6 +1,6 @@
 # 1. Ultrasonic Sensor
 
-<img class="common_img" src="../_static/media/chapter_1\section_1/media/image2.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_1/media/image2.png" style="width:500px" />
 
 ## 1.1 Product Introduction
 
@@ -8,7 +8,7 @@ Hiwonder ultrasonic sensor for distance measurement mainly includes an ultrasoni
 
 This module uses I/O to trigger distance measurement. The principle of distance measurement is that one of controlling ports transmits a10μs high level to trigger module to transmit eight 406hz square waves and then detect whether there is returned signal. If signal returns, module will output high level. The duration of high level is equivalent to the time ultrasonic wave used on from transmitting to receiving. The transmission speed of square wave is 346M/S the same as that of sound module. It takes 28.9μs for square wave to transmit 1 cm.
 
-**Formula: Distance (cm)= Duration time of high level signal（μs）/58（μs/cm）**
+**Formula: Distance (cm)= Duration time of high level signal(μs)/58(μs/cm)**
 
 For user-friendly connection, sensor comes with tapped hole so that it can be fixed on other devices with M4 screw. It is widely applicable in smart car and robot automatic obstacle avoidance.
 
@@ -47,11 +47,11 @@ Using sensor with Arduino UNO to help you get quick experience.
 
 Take connecting 4PIN wire to D8 and D9 port on Arduino expansion board as example.
 
-<img class="common_img" src="../_static/media/chapter_1\section_1/media/image3.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_1/media/image3.png" style="width:500px" />
 
 Please note that if not using Arduino expansion board, you need to connect sensor to Arduino demo board through Dupont line as following.
 
-<img class="common_img" src="../_static/media/chapter_1\section_1/media/image4.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_1/media/image4.png" style="width:500px" />
 
 ### 1.3.3 Project Process 
 
@@ -59,7 +59,7 @@ Step 1: Download and install Arduino IDE on your computer.
 
 Step 2：Connect glowing ultrasonic module to corresponding port on Arduino UNO board with four Male-to-female Dupont lines as the picture shown above.
 
-Step 3: Connect Arduino UNO demo board to computer with USB cable. After opening Arduino IDE, please paste “**[1.3.5 Sample code]()**”in “**File/New**”.
+Step 3: Connect Arduino UNO demo board to computer with USB cable. After opening Arduino IDE, please paste "**[1.3.5 Sample code](#anchor_1_3_5)**" in "**File/New**".
 
 Step 4: Select suitable demo board and port, then compile and upload the program.
 
@@ -69,11 +69,13 @@ Step 5: After the code is uploaded successfully, please open the serial monitor 
 
 The serial monitor displays distance from ultrasonic to obstacle. The unit of distance is cm.
 
-<img class="common_img" src="../_static/media/chapter_1\section_1/media/image5.png" style="width:500px" />
+<img class="common_img" src="../_static/media/chapter_1/section_1/media/image5.png" style="width:500px" />
+
+<p id="anchor_1_3_5"></p>
 
 ### 1.3.5 Example Code
 
-```py
+```
 /********Ultrasonic Sensor Testing Program*******
  * Arduino Type：Arduino UNO
  **************************/
@@ -116,4 +118,3 @@ Q2: Are there any other details should be paid attention to during testing?
 > * This module should not be connected with electricity. If want to connect with electricity, please connect the GND terminal of module first, otherwise it will affect module normal operation.
 >
 > * When measure distance, the detected object area should not less than 0.5 square meters and ground should be as flat as possible, otherwise measurement result will be affected.
-
