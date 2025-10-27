@@ -105,7 +105,7 @@ delay(50);
 }
 ```
 
-# 1.4 Q&A
+## 1.4 Q&A
 
 Q1: Why ultrasonic module failed to display after uploading?
 
